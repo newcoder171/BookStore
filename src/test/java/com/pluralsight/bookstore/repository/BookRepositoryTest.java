@@ -8,6 +8,7 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.util.Date;
@@ -20,7 +21,19 @@ public class BookRepositoryTest {
     @javax.inject.Inject
     private  BookRepository bookRepository;
 
-    @org.junit.Test
+    @Test(expected = Exception.class )
+    public void findWithInvalidId(){
+        bookRepository.find(null);
+    }
+
+    @Test(expected = Exception.class )
+    public void createInvalidBook(){
+        Book book = new Book(null, "String description", 12F, "isbn", new Date(), 50, "http://imageUrl", Language.ENGLISH);
+        book = bookRepository.create(book);
+    }
+
+
+    @Test
     public void create() throws Exception {
         //Test counting books
         assertEquals(Long.valueOf(0), bookRepository.countAll());
