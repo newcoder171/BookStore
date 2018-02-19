@@ -65,6 +65,7 @@
             <version>${version.arquillian.wildfly}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

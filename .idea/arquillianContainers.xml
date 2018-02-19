@@ -4,6 +4,5 @@
     <container containerId="container.arquillian.remote.wildFly" name="WildFly Remote">
       <maven-library groupId="org.wildfly.arquillian" artifactId="wildfly-arquillian-container-remote" version="RELEASE" />
     </container>
-    <container containerId="container.arquillian.manual" name="Manual container configuration" />
   </component>
 </project>

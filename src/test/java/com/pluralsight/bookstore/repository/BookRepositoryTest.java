@@ -2,6 +2,9 @@ package com.pluralsight.bookstore.repository;
 
 import com.pluralsight.bookstore.model.Book;
 import com.pluralsight.bookstore.model.Language;
+import com.pluralsight.bookstore.utils.IsbnGenerator;
+import com.pluralsight.bookstore.utils.NumberGenerator;
+import com.pluralsight.bookstore.utils.TextUtil;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.core.api.annotation.Inject;
 import org.jboss.arquillian.junit.Arquillian;
@@ -39,7 +42,7 @@ public class BookRepositoryTest {
         assertEquals(Long.valueOf(0), bookRepository.countAll());
         assertEquals(0, bookRepository.findAll().size());
 
-        Book book = new Book("title", "String description", 12F, "isbn", new Date(), 50, "http://imageUrl", Language.ENGLISH);
+        Book book = new Book("A  title", "String description", 12F, "isbn", new Date(), 50, "http://imageUrl", Language.ENGLISH);
         book = bookRepository.create(book);
         Long bookId = book.getId();
 
@@ -50,7 +53,10 @@ public class BookRepositoryTest {
         Book bookFound = bookRepository.find(bookId);
 
         //Check the found book
-        assertEquals("title", bookFound.getTitle());
+        //Should have the expected title
+        //
+        assertEquals("A title", bookFound.getTitle());
+        assertTrue(bookFound.getIsbn().startsWith("13"));
 
         //Test counting books
         assertEquals(Long.valueOf(1), bookRepository.countAll());
@@ -72,6 +78,9 @@ public class BookRepositoryTest {
                 .addClass(BookRepository.class)
                 .addClass(Book.class)
                 .addClass(Language.class)
+                .addClass(TextUtil.class)
+                .addClass(NumberGenerator.class)
+                .addClass(IsbnGenerator.class)
                 .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
                 .addAsManifestResource("META-INF/test-persistence.xml", "persistence.xml");
     }
