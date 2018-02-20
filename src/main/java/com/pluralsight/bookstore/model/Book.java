@@ -19,8 +19,8 @@ public class Book {
     @Size(min = 1, max = 200)
     private String title;
 
-    @Column(length = 1000)
-    @Size(min = 1, max = 1000)
+    @Column(length = 10000)
+    @Size(min = 1, max = 10000)
     private String description;
 
     @Column(name = "unit_cost")
@@ -38,9 +38,10 @@ public class Book {
     @Past
     private Date unitDate;
 
+    @Column(name = "nb_of_pages")
     private Integer nbOfPages;
 
-    @Column(name = "imgae_url")
+    @Column(name = "image_url")
     private String imageUrl;
 
     private Language language;

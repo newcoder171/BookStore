@@ -1,5 +1,5 @@
 package com.pluralsight.bookstore.model;
 
 public enum Language {
-    ENGLISH, FRENCH, SPANISH, GERMAN, MANDARIN, HEBREW
+    ENGLISH, FRENCH, SPANISH, PORTUGUESE, ITALIAN, FINISH, GERMAN, DUTCH, RUSSIAN
 }
