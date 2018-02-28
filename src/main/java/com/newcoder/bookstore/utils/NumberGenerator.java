@@ -1,4 +1,4 @@
-package com.pluralsight.bookstore.utils;
+package com.newcoder.bookstore.utils;
 
 public interface NumberGenerator {
     String generateNumber();

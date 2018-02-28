@@ -1,3 +1,8 @@
-C:\Users\No\Desktop\Legion\Javastore\New folder\bookstore-back\src\main\java\com\pluralsight\bookstore\model\Language.java
-C:\Users\No\Desktop\Legion\Javastore\New folder\bookstore-back\src\main\java\com\pluralsight\bookstore\model\Book.java
-C:\Users\No\Desktop\Legion\Javastore\New folder\bookstore-back\src\main\java\com\pluralsight\bookstore\repository\BookRepository.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\model\Language.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\rest\BookEndpoint.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\utils\NumberGenerator.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\rest\JAXRSConfiguration.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\repository\BookRepository.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\utils\IsbnGenerator.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\utils\TextUtil.java
+C:\Users\no\Dev\BookStore-back\src\main\java\com\newcoder\bookstore\model\Book.java

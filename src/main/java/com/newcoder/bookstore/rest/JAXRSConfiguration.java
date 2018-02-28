@@ -1,4 +1,4 @@
-package com.pluralsight.bookstore.rest;
+package com.newcoder.bookstore.rest;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

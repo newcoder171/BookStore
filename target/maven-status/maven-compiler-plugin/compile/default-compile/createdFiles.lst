@@ -1,1 +1,8 @@
-com\pluralsight\bookstore\repository\BookRepository.class
+com\newcoder\bookstore\utils\TextUtil.class
+com\newcoder\bookstore\rest\JAXRSConfiguration.class
+com\newcoder\bookstore\repository\BookRepository.class
+com\newcoder\bookstore\utils\IsbnGenerator.class
+com\newcoder\bookstore\rest\BookEndpoint.class
+com\newcoder\bookstore\model\Book.class
+com\newcoder\bookstore\utils\NumberGenerator.class
+com\newcoder\bookstore\model\Language.class

@@ -2,7 +2,7 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
 
     <persistence-unit name="bookStorePU">
-        <class>com.pluralsight.bookstore.model.Book</class>
+        <class>com.newcoder.bookstore.model.Book</class>
         <properties>
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
             <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>

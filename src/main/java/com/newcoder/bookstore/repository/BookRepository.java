@@ -1,8 +1,8 @@
-package com.pluralsight.bookstore.repository;
+package com.newcoder.bookstore.repository;
 
-import com.pluralsight.bookstore.model.Book;
-import com.pluralsight.bookstore.utils.NumberGenerator;
-import com.pluralsight.bookstore.utils.TextUtil;
+import com.newcoder.bookstore.utils.NumberGenerator;
+import com.newcoder.bookstore.model.Book;
+import com.newcoder.bookstore.utils.TextUtil;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;

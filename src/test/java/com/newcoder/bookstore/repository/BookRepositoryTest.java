@@ -1,12 +1,11 @@
-package com.pluralsight.bookstore.repository;
+package com.newcoder.bookstore.repository;
 
-import com.pluralsight.bookstore.model.Book;
-import com.pluralsight.bookstore.model.Language;
-import com.pluralsight.bookstore.utils.IsbnGenerator;
-import com.pluralsight.bookstore.utils.NumberGenerator;
-import com.pluralsight.bookstore.utils.TextUtil;
+import com.newcoder.bookstore.model.Book;
+import com.newcoder.bookstore.model.Language;
+import com.newcoder.bookstore.utils.NumberGenerator;
+import com.newcoder.bookstore.utils.IsbnGenerator;
+import com.newcoder.bookstore.utils.TextUtil;
 import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.core.api.annotation.Inject;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
