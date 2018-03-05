@@ -5,9 +5,8 @@
     "version" : "1.0.0",
     "title" : "BookStore APIs",
     "contact" : {
-      "name" : "Antonio Goncalves",
-      "url" : "https://app.pluralsight.com/library/search?q=Antonio+Goncalves",
-      "email" : "antonio.goncalves@gmail.com"
+      "name" : "NewCoder",
+      "email" : "newcoder17@gmail.com"
     }
   },
   "host" : "localhost:8080",

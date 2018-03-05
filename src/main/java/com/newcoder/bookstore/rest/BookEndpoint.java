@@ -106,6 +106,7 @@ public class BookEndpoint {
 
         if (books.size() == 0)
             return Response.noContent().build();
+        //return Response.ok(books).header("Access-Control-Allow-Origin", "*").build();
         return Response.ok(books).build();
     }
 
@@ -122,6 +123,7 @@ public class BookEndpoint {
 
         if (nbOfBooks == 0)
             return Response.noContent().build();
+        //return Response.ok(nbOfBooks).header("Access-Control-Allow-Origin", "*").build();
         return Response.ok(nbOfBooks).build();
     }
 
